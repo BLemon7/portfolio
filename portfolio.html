@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+
+        <meta charset="utf-8" />
+
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- 33 KB -->
+
+        <!-- fotorama.css & fotorama.js. -->
+        <!-- 3 KB -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+        <!-- 16 KB -->
+
+        <script>
+            $(document).ready(function() {
+
+                // animate the anchor click
+                $('a[href^="#project"]').on('click', function(e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function() {
+                        window.location.hash = target;
+                    });
+                });
+
+                // when the page scrolls animate the scroll to top button to fade in or out
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scroll-to-top').fadeIn();
+                    } else {
+                        $('.scroll-to-top').fadeOut();
+                    }
+                });
+
+                //click to scroll to top
+                $('.scroll-to-top').click(function() {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            }); <
+        </script>
+    </head>
+    <section id="wrapper">
+        <center> <img src="images/word_marque.png"> </center>
+
+
+            <ul class="nav">
+                <li><a href="#project1">Project 01</a></li>
+                <li><a href="#project2">Project 02</a></li>
+                <li><a href="#project3">Project 03</a></li>
+
+            </ul>
+            <br>
+            <br>
+            <section class="purple">
+
+                <h1>I'm Brendan,</h1>
+                <h2>Aspiring User Experience Designer.</h2>
+                <p>Welcome to my portfolio site. Here I have compiled the work I have completed this semester's module, IXD103, where I have been establishing my brand identity. This includes visual identities such as my monogram, word mark, and visual mark.
+                    <br>
+                    <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            </section>
+
+            <p>Welcome to my portfolio site. Here I have compiled the work I have completed the past two semesters. Primarily I would like to share my content from IXD103, where I have been establishing my brand identity. This includes visual identities such as my monogram, word mark, and visual mark.
+                <br>
+                <br> Also from this semester, I have my infographic and app tasks from IXD104.
+
+                <section>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h1 id="project1"> Project 01 </h1>
+                    <h2>Monogram</h2>
+
+
+
+                    <section class="version1">
+
+                        <p>Below you can see the monogram I designed based on my initials - BL. The overall shape is based on basic geometric shapes for a contemporary look. The colour scheme utilises purple to convey the mood of creativity and elegance on the first impression. I have created an all-black version for use against contrasting backgrounds. The two versions can be seen below.</p>
+                        <br>
+                        <br>
+                        <center>
+                            <!--img src="images/final_monogram.png" height="500px"-->
+                            <!-- 2. Add images to <div class="fotorama"></div>. -->
+                            <div class="fotorama" data-height="450" data-allowfullscreen="true">
+                                <img src="images/final_monogram.png" data-caption="Colour version">
+                                <img src="images/final_monogram_black.png" data-caption="Monochrome/contrast" height="50px">
+                            </div>
+                        </center>
+
+
+                        <p><span class="dropcap">B</span>askerville was born in the village of Wolverley, near Kidderminster in Worcestershire, and worked as a printer in Birmingham. Baskerville printed works for the University of Cambridge and, although an atheist, printed a splendid folio bible in 1763. His typefaces were greatly admired by Benjamin Franklin, a printer and fellow member of the Royal Society of Arts, who took the designs back to the newly-created United States, where they were adopted for most federal government publishing.</p>
+
+                        <p>Baskerville was responsible for numerous innovations in printing, paper and ink production. He developed a technique which produced a smoother whiter paper which showcased his strong black type. He also pioneered a completely new style of typography, adding wide margins and generous leading to improve legibility.</p>
+
+                        <blockquote>“Having been an early admirer of the beauty of letters, I became insensibly desirous of contributing to the perfection of them. I formed to myself ideas of greater accuracy than had yet appeared, and had endeavoured to produce a set of types according to what I conceived to be their true proportion.”</blockquote>
+
+                        <cite>—John Baskerville, preface to Milton, 1758 (Anatomy of a Typeface)</cite>
+
+
+                        <hr>
+
+                        <h1 id="project2"> Project 02 </h1>
+                        <h2>Wordmark</h2>
+
+                        <p class="uppercase">Here is my word mark, which hasn't abstracted far from my monogram. I have added horizontal text as I think it is very effective for letterheads and website headers. The font choice is Exo which I have incorporated into my brand identity. I feel the sans type is effective at maintaining the contemporary style which I have employed in my monogram.
+                            <br>
+                            <br> As with the monogram, I have created an all-black version for use against contrasting backgrounds. The two versions can be seen below.</p>
+                        <center>
+                            <div class="fotorama" data-height="400" data-allowfullscreen="true">
+                                <img src="images/word_marque.png" data-caption="Colour version" height="500">
+                                <img src="images/word_marque_black.png" data-caption="Monochrome/contrast" height="500">
+                            </div>
+                        </center>
+
+                        <p>Baskerville was born in the village of Wolverley, near Kidderminster in Worcestershire, and worked as a printer in Birmingham. Baskerville printed works for the University of Cambridge and, although an atheist, printed a splendid folio bible in 1763. His typefaces were greatly admired by Benjamin Franklin, a printer and fellow member of the Royal Society of Arts, who took the designs back to the newly-created United States, where they were adopted for most federal government publishing.</p>
+
+                        <p>Baskerville was responsible for numerous innovations in printing, paper and ink production. He developed a technique which produced a smoother whiter paper which showcased his strong black type. He also pioneered a completely new style of typography, adding wide margins and generous leading to improve legibility.</p>
+
+                        <blockquote>“Having been an early admirer of the beauty of letters, I became insensibly desirous of contributing to the perfection of them. I formed to myself ideas of greater accuracy than had yet appeared, and had endeavoured to produce a set of types according to what I conceived to be their true proportion.”</blockquote>
+
+                        <cite>—John Baskerville, preface to Milton, 1758 (Anatomy of a Typeface)</cite>
+
+                    </section>
+
+                    <hr>
+                    <section class="version1">
+
+                        <h1 id="project3"> Project 03 </h1>
+                        <h2>Visual Marque</h2>
+
+                        <p>My visual mark is based upon a unique part of me - my surname! You may question why this particular lemon is purple. A regular, yellow lemon would clash with my identity's purple colour scheme, so my solution was to make this visual mark even more eye catching by maintaining the brand identity.</p>
+
+                        <center>
+                            <div class="fotorama" data-height="500" data-allowfullscreen="true">
+                                <img src="images/visual_marque_purple.png" height="50px">
+                            </div>
+                        </center>
+
+                        <p>Baskerville was born in the village of Wolverley, near Kidderminster in Worcestershire, and worked as a printer in Birmingham. Baskerville printed works for the University of Cambridge and, although an atheist, printed a splendid folio bible in 1763. His typefaces were greatly admired by Benjamin Franklin, a printer and fellow member of the Royal Society of Arts, who took the designs back to the newly-created United States, where they were adopted for most federal government publishing.</p>
+
+                        <p>Baskerville was responsible for numerous innovations in printing, paper and ink production. He developed a technique which produced a smoother whiter paper which showcased his strong black type. He also pioneered a completely new style of typography, adding wide margins and generous leading to improve legibility.</p>
+
+                        <blockquote>“Having been an early admirer of the beauty of letters, I became insensibly desirous of contributing to the perfection of them. I formed to myself ideas of greater accuracy than had yet appeared, and had endeavoured to produce a set of types according to what I conceived to be their true proportion.”</blockquote>
+
+                    </section>
+                </section>
+
+                <section class="purple">
+                    <center>
+                        <a href="https://brendanlemon.tumblr.com"><img src="images/tumblr.svg" height="40px" width="40px" hspace="20px"></a>
+                        <a href="https://twitter.com/LemonUXD"> <img src="images/twitter.svg" height="40px" width="40px" hspace="20px"></a>
+                        <a href="https://brendanlemon.tumblr.com"><img src="images/github.svg" height="40px" width="40px" hspace="20px"></a>
+                        <a href="https://brendanlemon.tumblr.com"><img src="images/email.svg" height="40px" width="40px" hspace="20px"></a>
+
+
+
+                        <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
+
+                </section>
+               
+                    <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
+
+                </section>
+
+</body>
+
+</html>
