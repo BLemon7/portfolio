@@ -1,2 +1,2 @@
 # portfolio
-[IXD103 Portfolio](http//:BLemon7.github.io/portfolio/portfolio.html)
+[IXD103 Portfolio](https://blemon7.github.io/portfolio/portfolio.html)
