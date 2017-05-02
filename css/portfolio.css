@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+a:visited {
+    color: #605495
+}
+
+body {
+    background: #fff;
+    color: #545454;
+    font-family: 'exo';
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #605495;
+}
+
+#wrapper {width:100%;}
+
+.purple { background-color: #605495; color: white; padding: 2em;}
+
+.sections {width: 800px;}
+
+.version1{padding: 4em;}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    color: #222;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: .5em;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+.nav {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    color: #605495;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #605495;
+    color: white;
+}
+
+p {
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+    display: inline
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: 1em margin-bottom: 1em
+}
+
+h2 {
+    font-size: 2.25em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+header h2 {
+    font-style: italic;
+    font-size: 1.8em;
+    color: #333;
+}
+
+hgroup {
+    margin-bottom:
+}
+
+.intro {
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+
+blockquote {
+    padding: 1em 0 2em 0;
+    font-size: 1.75em;
+    line-height: 1.4em;
+    hanging-punctuation: first;
+    text-indent: -0.45em;
+    margin: 0;
+    color: darkgray;
+    font-style: italic;
+}
+
+blockquote cite {
+    font-size: .75em;
+}
+
+cite {
+    color: darkgray;
+}
+
+.anchor {
+    text-transform: uppercase;
+}
+
+.leader {
+    text-transform: uppercase;
+}
+
+.dropcap {
+    float: left;
+    font-size: 4.7em;
+    line-height: .5em;
+    margin-right: 0;
+}
+
+.version2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.version2 p+p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -0.1em;
+}
+
+.version2 p+p+p {
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 1.5em;
+}
+
+.version2 cite {
+    text-transform: uppercase;
+}
+
+.version3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.version3 blockquote {
+    color: darkgray;
+}
+
+.version3 h1,
+h2,
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.version3 blockquote {
+    font-family: 'Roboto Slab', serif;
+}
+
+hr {
+    margin: 4em 0;
+    height: 2px;
+    background-color: #605495;
+    color: #605495;
+    border: 0 none;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    display: none;
+}
+
+.scroll-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+}
+
+.scroll-to-top:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* override fotorama full screen backgorund colour*/
+.fotorama--fullscreen .fotorama__stage {
+    background-color: white;
+}
+
+/*---Tablet------*/
+
+@media (max-width: 50em) {
+    body {
+        background-color: #605495;
+        margin: auto 0;
+        width: 85%;
+        font-size: 115%;
+    }
+    article {
+        width: 95%;
+        padding: 0.5em;
+    }
+}
+
+
+/*---Smartphone------*/
+
+@media (max-width: 30em) {
+    body {
+        background-color: #605495;
+        margin: auto 0;
+        width: 90%;
+        font-size: 115%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    blockquote {
+        font-size: 1.5em
+    }
+}
