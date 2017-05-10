@@ -29,7 +29,15 @@ ul {
 
 #wrapper {
     width: 100%;
-    padding-top: 5px;
+}
+
+#projectHeader {
+	padding-bottom: 35px;
+}
+
+.headerImage {
+	text-align: center;
+	padding: 15px 0px;
 }
 
 .purple {
@@ -37,6 +45,11 @@ ul {
     color: white;
     padding: 2em;
     margin-bottom: 20px;
+}
+
+.footer {
+	margin-bottom: 0px;
+	text-align: center;
 }
 
 .sections {
@@ -51,8 +64,19 @@ h1,
 h2,
 h3 {
     font-weight: normal;
-    color: black;
     text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: 1em margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2.25em;
+    margin-bottom: 1em;
+    font-style: italic;
+	margin-top: .5em;
 }
 
 .purple h1,
@@ -63,10 +87,6 @@ h3 {
 
 h3 {
     font-weight: bold;
-}
-
-h2 {
-    margin-top: .5em;
 }
 
 b,
@@ -141,17 +161,6 @@ p {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2em;
-}
-
-h1 {
-    font-size: 4em;
-    margin-top: 1em margin-bottom: 1em
-}
-
-h2 {
-    font-size: 2.25em;
-    margin-bottom: 1em;
-    font-style: italic;
 }
 
 header h2 {
@@ -240,7 +249,7 @@ h2,
 }
 
 hr {
-    margin: 4em 0;
+    margin: 2em 6em;
     height: 2px;
     background-color: #605495;
     color: #605495;
@@ -274,12 +283,23 @@ hr {
 }
 
 
-/* override fotorama full screen backgorund colour*/
+/* override fotorama full screen backgorund colour and other css*/
 
 .fotorama--fullscreen .fotorama__stage {
     background-color: white;
 }
 
+.fotorama {
+	padding: 10px 0px;
+}
+
+.fotorama__fullscreen-icon {
+	background-color: #605495;
+}
+
+.fotorama__dot{
+	border: 1px solid #605495;
+}
 
 /*---Tablet------*/
 
